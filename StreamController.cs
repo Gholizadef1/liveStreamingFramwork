@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace StreamController
 {
-    public class StreamController
+    public class StreamController:User
     {
         private string title { get; set; }
         private User admin { get; set; }

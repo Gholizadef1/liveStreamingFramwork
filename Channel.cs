@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Channel
 {
-    public class Channel
+    public class Channel:User
     {
         private string name { get; set; }
         private User admin { get; set; }
