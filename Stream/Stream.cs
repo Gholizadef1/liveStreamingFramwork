@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace Stream
 {
@@ -13,8 +14,19 @@ namespace Stream
 
     public long SendLike(User user)
     {
-        likeCount = likeCount + 1;
-        return likeCount;
+        List<string> userLiked = new List<string>();
+        foreach (var i in userLiked)
+        {
+            userLiked.Add(user.userName);
+        }
+
+        if (!userLiked.Contains(user.userName))
+        {
+            likeCount = likeCount + 1;
+            return likeCount;
+        };
+
     }
 }
 }
+
