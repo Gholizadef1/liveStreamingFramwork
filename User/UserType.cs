@@ -4,6 +4,7 @@ namespace System.Collections
 {
     public enum UserType
     {
-        admin,veiwer
+        ADMIN,
+        VIEWER
     }
 }
